@@ -10,9 +10,9 @@ console.log(test);
 
 // 03 - Concatenation
 
-let name = "Pauline";
+const firstname = "Pauline";
 
-console.log(`Nice to meet you ${name}`);
+console.log(`Nice to meet you ${firstname}`);
 
 // 04 - String Length
 
