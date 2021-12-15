@@ -1,21 +1,21 @@
 // 01 - Number
 
-let integer = 102;
-let float = 13.5;
+const integer = 102;
+const float = 13.5;
 
 console.log(integer, float);
 
 // 02 - Convert
 
-let basic = 34;
-let  stringified = basic.toString();
+const basic = 34;
+const  stringified = basic.toString();
 
 console.log(stringified);
 
 // 03 - Round
 
-let num = 1.5;
-let rounded = Math.round(num);
+const num = 1.5;
+const rounded = Math.round(num);
 
 console.log(rounded);
 
@@ -27,6 +27,7 @@ let bis = 5;
 console.log("Addition : ", test + bis);
 console.log("Soustraction : ", test - bis);
 console.log("Multiplication : ", test * bis);
+console.log("Carré : ", test ** bis);
 console.log("Division : ", test / bis);
 console.log("Modulo : ", test % bis);
 
@@ -35,11 +36,12 @@ console.log("Modulo : ", test % bis);
 test = 143;
 bis = 219;
 
-console.log(test > bis);
-console.log(test < bis);
-console.log(test >= bis);
-console.log(test <= bis);
-console.log(test === bis);
+console.log("Is test bigger than bis?", test > bis);
+console.log("Is test smaller than bis?", test < bis);
+console.log("Is test equal to or bigger than bis?", test >= bis);
+console.log("Is test equal to or smaller than bis?", test <= bis);
+console.log("Is test strictly equal to bis?", test === bis);
+console.log("Is test different to bis?", test !== bis);
 
 // 06 - Condition
 
@@ -82,9 +84,9 @@ if (score >= limit && password.length > 5) {
 let min = 1;
 let max = 6;
 
-let random = Math.floor(Math.random() * (max - min + 1) + 1);
+const random = Math.floor(Math.random() * (max - min + 1) + 1);
 
-console.log(random);
+console.log("Random number:", random);
 
 if (random === 6) {
     console.log("Yes I win !");
@@ -138,3 +140,24 @@ switch (month) {
 }
 
 // Bonus III
+
+let roundedNumber = 3.6;
+const decimal = roundedNumber - Math.floor(roundedNumber)
+
+if (decimal >= 0.5) {
+    console.log(Math.ceil(roundedNumber));
+} else {
+    console.log(Math.floor(roundedNumber));
+}
+
+// Bonus IV
+
+const strNumber = roundedNumber.toString();
+const index = strNumber.indexOf(".");
+const strNumberSubstr = strNumber.substring(index);
+
+if (strNumberSubstr >= .5) {
+    console.log(Math.ceil(roundedNumber));
+} else {
+    console.log(Math.floor(roundedNumber));
+}
