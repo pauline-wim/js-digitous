@@ -1,10 +1,10 @@
 // 06 - Reverse
 
 let sentence = "Hello Konexio !";
-sentence = sentence.split("");
+let reversedSentence = "";
 
-for (let i = 0; i < sentence.length; i++) {
-  
-
+for (let i = sentence.length - 1; i >= 0; i--) {
+  reversedSentence += sentence[i];
 }
 
+console.log(reversedSentence)
