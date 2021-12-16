@@ -1,8 +1,8 @@
 // 03 - Add and Remove
 
-let objects = ["pen", "book", "lamp"];
-objects.unshift("chair");
+const objects = ["pen", "book", "lamp"];
 
+objects.unshift("chair");
 console.log(objects);
 
 objects.pop();

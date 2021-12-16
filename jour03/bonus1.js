@@ -15,7 +15,7 @@ for (let i = 0; i < 100; i++) {
     } else if (i % 3 === 0) {
         console.log("fizz");
     } else if (i % 7 === 0) {
-        console.log("");
+        continue;
     } else {
         console.log(i);
     }
