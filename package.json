@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jour01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauline-wim/js-digitous.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauline-wim/js-digitous/issues"
+  },
+  "homepage": "https://github.com/pauline-wim/js-digitous#readme",
+  "dependencies": {
+    "prompt": "^1.2.0"
+  }
+}

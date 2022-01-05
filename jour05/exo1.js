@@ -1,5 +1,11 @@
 // 01 - Calculator
 
+const prompt = require("prompt");
+
+prompt.start();
+
+
+
 function calculate(num1, num2, operator) {
     switch (operator) {
         case "+":
