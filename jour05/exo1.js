@@ -8,6 +8,8 @@ prompt.get('Calculate', function (err, res) {
     // console.log(res.Calculate);
     if (res.Calculate.length === 3) {
         console.log(calculate(res.Calculate[0], res.Calculate[2], res.Calculate[1]));
+    } else {
+        console.log("Error");
     }
   });
 
