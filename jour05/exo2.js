@@ -11,5 +11,5 @@ prompt.get('Multiply', function (err, res) {
             console.log(finalResult);
         }
     };
-    console.log(multiply(res.Multiply));
+    return multiply(res.Multiply);
 });
