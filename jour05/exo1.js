@@ -4,7 +4,12 @@ const prompt = require("prompt");
 
 prompt.start();
 
-
+prompt.get('Calculate', function (err, res) {
+    // console.log(res.Calculate);
+    if (res.Calculate.length === 3) {
+        console.log(calculate(res.Calculate[0], res.Calculate[2], res.Calculate[1]));
+    }
+  });
 
 function calculate(num1, num2, operator) {
     switch (operator) {
@@ -26,5 +31,5 @@ function calculate(num1, num2, operator) {
     }
 }
 
-console.log(calculate(5, 4, "x"));
+// console.log(calculate(5, 4, "x"));
 
