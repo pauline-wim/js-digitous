@@ -10,6 +10,11 @@ function checkProfile() {
         {name: 'username', description: "What's your username?"},
         {name: 'password', description: "What's your password?"}
      ], function (err, res) {
+         
+        if (err) {
+            console.log("Something went wrong", err);
+        }
+
         const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         // regular email format
         const usernameFormat = /^[A-Za-z0-9-]*$/;
