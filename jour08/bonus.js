@@ -34,6 +34,7 @@ function game() {
 
         if (res.dealer === "Draw" || res.dealer === "draw") {
                 let newCard = Math.floor(Math.random() * 10) + 1;
+                console.log(newCard);
                 player += newCard;
                 return game();
         } else if (res.dealer === "pass" || res.dealer === "Pass") {
@@ -51,11 +52,12 @@ function game() {
 
 function endGame() {
     if (player > 21) {
-        console.log("You lose...");
+        console.log(`Your score is of ${player}. You lose...`);
     } else if (player <= bank) {
-        console.log("You lose...");
+        console.log(`Your score is of ${player}. You lose...`);
     } else if (player = 21 || player > bank) {
-        console.log("BLACK JACK! You win! Congrats, you luck bastard!");
+        console.log(`BLACK JACK! Your score is of ${player}.`);
+        console.log("You win! Congrats, you lucky bastard!");
     }
 };
 
