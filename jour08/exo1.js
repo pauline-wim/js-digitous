@@ -1,8 +1,8 @@
 // 01 - Countries
 
-let countriesNames = [];
-
 const axios = require("axios");
+
+let countriesNames = [];
 
 function getCountries() {
     axios.get("https://restcountries.com/v3.1/all").then(function (res) {
