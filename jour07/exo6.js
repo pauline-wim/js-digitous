@@ -28,13 +28,14 @@ const cakes = [
 	},
 ]
 
-let soldOut = cakes.filter(function (chocolate) {
-    if (chocolate.flavor === "chocolate") {
-        return chocolate;
-    }
-}).map(function (status) {
-    status.status = "Sold out!";
-    return status;
+const soldOut = cakes.filter(function (cake) {
+	return cake.flavor === "chocolate";
+    // if (cake.flavor === "chocolate") {
+    //     return cake;
+    // }
+}).map(function (chocolateCake) {
+    chocolateCake.status = "Sold out!";
+    return chocolateCake;
 });
 
 console.log(soldOut);

@@ -3,9 +3,10 @@
 const tab = [1, "toto", 34, "javascript", 8];
 
 const numbers = tab.filter(function (num) {
-    if (isNaN(num) === false) {
-        return num;
-    }
+    // if (isNaN(num) === false) {
+    //     return num;
+    // }
+        return typeof num === "number";
 });
 
 console.log(numbers);
