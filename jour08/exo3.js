@@ -8,6 +8,6 @@ function catchPokemon(id) {
         });
 }
 
-let n = Math.floor(Math.random() * ((146 - 1) + 1));
+let n = Math.floor(Math.random() * ((267 - 1) + 1));
 
 catchPokemon(n);
