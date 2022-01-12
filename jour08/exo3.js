@@ -4,7 +4,9 @@ const axios = require("axios");
 
 function catchPokemon(id) {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(function (res) {
-        console.log({id: res.data.id, name: res.data.name});
+        console.log(`id: ${res.data.id} \nname: ${res.data.name}`);
+        }).catch((err) => {
+            console.log("Something went wrong.");
         });
 }
 
